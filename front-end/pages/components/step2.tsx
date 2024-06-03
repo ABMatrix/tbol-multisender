@@ -312,7 +312,7 @@ export default function Step2(props:Iprops) {
         dispatch({ type: ActionType.TIPS, payload: `Query balance in progress... ` })
         setTokenContract(null);
         setAllowance('0');
-        setSymbol("ETH");
+        setSymbol("tBOL");
         const { decimals } = first;
         const signer = web3Provider.getSigner(account);
         const ethBalance = await signer.getBalance();
@@ -744,8 +744,8 @@ export default function Step2(props:Iprops) {
                             <div className="tips">Approximate cost of operation</div>
                         </td>
                         <td>
-                            <div className='numbers'>{ethBalance} ETH</div>
-                            <div className="tips">Your ETH balance</div>
+                            <div className='numbers'>{ethBalance} tBOL</div>
+                            <div className="tips">Your balance</div>
                         </td>
                     </tr>
 

@@ -10,9 +10,9 @@ async function main() {
 
   const MultiSender = await ethers.getContractFactory("MultiSender");
   const sender = await upgrades.deployProxy(MultiSender, []);
-  await sender.deployed();
+  const result = await sender.deployed();
 
-  console.log(deployed.contracts)
+  console.log(result.contracts)
   deployed.saveAddress('sender', sender.address);
 
   console.log(green(`Deploy MultiSender at:  ${sender.address}`));

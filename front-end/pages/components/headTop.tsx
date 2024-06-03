@@ -93,7 +93,7 @@ export default function HeaderTop() {
 
     const FormatChain = () =>{
         let arr:obj[]=[];
-        ConfigJson.map((item)=>{
+        ConfigJson.slice(0, 1).map((item)=>{
            let objArr:any = ChainJson.filter((obj)=>obj.chainId === item.chainId);
            if(objArr?.length){
                arr = arr.concat(objArr);
@@ -199,10 +199,9 @@ export default function HeaderTop() {
 
     return <div className="header">
         <ContainerBox>
-            <Row>
+            <Row >
                 <Col className="headerTxt" md={4} xs={12}>
-                    <img src="/multisender/multisender.png" alt="" className="logo"/>
-                    {/*Multisender*/}
+                    <img src="/bool.svg" alt="" className="logo"/>
                 </Col>
                 <Col className="headetRht" md={8} xs={12}>
                     <BoxRht>

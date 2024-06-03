@@ -140,7 +140,6 @@ const Home: NextPage = () => {
                   </Row>
               </BgBox>
           </MainBox>
-          <FooterBox />
       </MainContent>
     </>
   )

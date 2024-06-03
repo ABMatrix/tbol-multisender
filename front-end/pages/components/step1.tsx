@@ -159,7 +159,7 @@ export default function Step1(props:Props){
                 <Col md={9}>
                     <FloatingLabel
                         controlId="Token"
-                        label="Token"
+                        label="Token (Default tBOL)"
                         className="mb-3"
                     >
                         <Form.Control

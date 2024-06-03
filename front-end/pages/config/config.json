@@ -1,5 +1,10 @@
 [
   {
+    "chainId": 481,
+    "name": "boolTestnet",
+    "sender": "0x3e2e602dF7db27e3c740be5891DE947220856481"
+  },
+  {
     "chainId": 1,
     "name": "mainnet",
     "sender": "0xdEF2f273859Ae503dD3De855Eb5Bc7b2D642d59A"

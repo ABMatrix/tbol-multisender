@@ -12,6 +12,7 @@ import "@nomiclabs/hardhat-solpp";
 
 import { config as dotEnvConfig } from "dotenv";
 dotEnvConfig();
+console.log(process.env.TESTNET_PRIVATE_KEY);
 
 const config: HardhatUserConfig = {
   defaultNetwork: 'hardhat',
@@ -23,6 +24,10 @@ const config: HardhatUserConfig = {
       gas: 12000000,
       blockGasLimit: 0x1fffffffffffff,
       allowUnlimitedContractSize: true
+    },
+    boolTestnet: {
+      url: "https://betatest-rpc-node-http.bool.network/",
+      accounts: [process.env.TESTNET_PRIVATE_KEY || ''],
     },
 
     bsctest: {
